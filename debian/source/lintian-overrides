@@ -1,0 +1,5 @@
+libzstd source: file-without-copyright-information
+libzstd source: mismatched-override
+libzstd source: no-debian-changes
+libzstd source: not-binnmuable-any-depends-any
+libzstd source: weak-library-dev-dependency
