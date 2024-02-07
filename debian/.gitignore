@@ -1,0 +1,10 @@
+*.substvars
+*debhelper*
+.debhelper
+autoreconf.*
+files
+libzstd-dev
+libzstd1
+libzstd1-udeb
+tmp
+zstd
