@@ -1,0 +1,4 @@
+usr/include/*
+usr/lib/libzstd.a usr/lib/x86_64-linux-gnu/
+usr/lib/libzstd.so usr/lib/x86_64-linux-gnu/
+usr/lib/pkgconfig/libzstd.pc usr/lib/x86_64-linux-gnu/pkgconfig/

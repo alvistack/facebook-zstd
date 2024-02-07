@@ -1,0 +1,3 @@
+libzstd-dev: copyright-without-copyright-notice
+libzstd-dev: initial-upload-closes-no-bugs
+libzstd-dev: zero-byte-file-in-doc-directory
