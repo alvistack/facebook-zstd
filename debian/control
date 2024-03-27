@@ -1,0 +1,59 @@
+Source: libzstd
+Section: libs
+Priority: optional
+Standards-Version: 4.5.0
+Maintainer: Wong Hoi Sing Edison <hswong3i@pantarei-design.com>
+Homepage: https://github.com/facebook/zstd/tags
+Vcs-Browser: https://github.com/alvistack/facebook-zstd
+Vcs-Git: https://github.com/alvistack/facebook-zstd.git
+Build-Depends:
+ debhelper,
+ debhelper-compat (= 10),
+ liblz4-dev,
+ liblzma-dev,
+ zlib1g-dev,
+
+Package: libzstd-dev
+Architecture: amd64
+Section: libdevel
+Description: fast lossless compression algorithm -- development files
+ Zstd, short for Zstandard, is a fast lossless compression algorithm, targeting
+ real-time compression scenarios at zlib-level compression ratio.
+ .
+ This package contains the headers and static library.
+Depends:
+ ${misc:Depends},
+ libzstd1 (= ${source:Version}),
+
+Package: libzstd1
+Architecture: amd64
+Section: libs
+Description: fast lossless compression algorithm
+ Zstd, short for Zstandard, is a fast lossless compression algorithm, targeting
+ real-time compression scenarios at zlib-level compression ratio.
+ .
+ This package contains the shared library.
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+
+Package: zstd
+Architecture: amd64
+Section: utils
+Description: fast lossless compression algorithm -- CLI tool
+ Zstd, short for Zstandard, is a fast lossless compression algorithm, targeting
+ real-time compression scenarios at zlib-level compression ratio.
+ .
+ This package contains the CLI program implementing zstd.
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+
+Package: libzstd1-udeb
+Architecture: amd64
+Section: debian-installer
+Package-Type: udeb
+Description: fast lossless compression algorithm library for debian-installer
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},

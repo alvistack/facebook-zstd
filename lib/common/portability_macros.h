@@ -155,4 +155,15 @@
 # define ZSTD_CET_ENDBRANCH
 #endif
 
+/*
+ * For x86 ELF targets, add .note.gnu.property section for Intel CET in
+ * assembly sources when CET is enabled.
+ */
+#if defined(__ELF__) && (defined(__x86_64__) || defined(__i386__)) \
+    && defined(__has_include)
+# if __has_include(<cet.h>)
+#  include <cet.h>
+# endif
+#endif
+
 #endif /* ZSTD_PORTABILITY_MACROS_H */

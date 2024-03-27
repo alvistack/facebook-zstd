@@ -1,0 +1,4 @@
+zstd: copyright-without-copyright-notice
+zstd: initial-upload-closes-no-bugs
+zstd: no-manual-page
+zstd: zero-byte-file-in-doc-directory
